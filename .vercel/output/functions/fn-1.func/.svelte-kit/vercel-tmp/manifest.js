@@ -14,30 +14,14 @@ return {
 		nodes: [
 			__memo(() => import('../output/server/nodes/0.js')),
 			__memo(() => import('../output/server/nodes/1.js')),
-			__memo(() => import('../output/server/nodes/2.js')),
-			__memo(() => import('../output/server/nodes/3.js')),
-			__memo(() => import('../output/server/nodes/4.js'))
+			__memo(() => import('../output/server/nodes/5.js'))
 		],
 		routes: [
 			{
-				id: "/",
-				pattern: /^\/$/,
+				id: "/favourite",
+				pattern: /^\/favourite\/?$/,
 				params: [],
 				page: { layouts: [0,], errors: [1,], leaf: 2 },
-				endpoint: null
-			},
-			{
-				id: "/activities",
-				pattern: /^\/activities\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 3 },
-				endpoint: null
-			},
-			{
-				id: "/archive",
-				pattern: /^\/archive\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 4 },
 				endpoint: null
 			}
 		],
