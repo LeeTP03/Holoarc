@@ -1,17 +1,5 @@
 let liveData =[
     {
-        "id": "8kJg5rLBKUU",
-        "title": "\u3010 \u30c9\u30e9\u30af\u30a8\u2162 \u3011\u5b8c\u5168\u521d\u898b\u3002SFC\u7248\u3067\u697d\u3057\u3080\u203c\u5e7d\u970a\u8239\u306f\u3069\u3053\u3060\uff01\uff1f\uff01\uff1f\uff01\uff1f\uff01\uff1f\uff01\u3010\u9df9\u5dba\u30eb\u30a4/\u30db\u30ed\u30e9\u30a4\u30d6\u3011\u203b\u30cd\u30bf\u30d0\u30ec\u3042\u308a",
-        "channelTitle": "Lui ch. \u9df9\u5dba\u30eb\u30a4 - holoX -",
-        "channelThumbnail": "https://yt3.ggpht.com/R_IzGiw1xDQp0y9zVvGkF9e8Gj8wtr2_551Ez3X6gOMIj3e6jra1I1suuK_jH9FqigBj8ywg=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/8kJg5rLBKUU/mqdefault_live.jpg",
-        "duration": "P0D",
-        "concurrentViewers": "10564",
-        "actualStartTime": "2023-07-08T03:00:27Z",
-        "scheduledStartTime": "2023-07-08T03:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=8kJg5rLBKUU"
-    },
-    {
         "id": "PaKPwSv7_lg",
         "title": "\u3010\u30ad\u30f3\u30b0\u30c0\u30e0\u30cf\u30fc\u30c4\uff12\u3011\u65b0\u305f\u306bKH2\u306e\u4e16\u754c\u3092\u65c5\u3059\u308b\u305e\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\u307a\u3053\uff01\u3010\u30db\u30ed\u30e9\u30a4\u30d6/\u514e\u7530\u307a\u3053\u3089\u3011\u203b\u30cd\u30bf\u30d0\u30ec\u3042\u308a",
         "channelTitle": "Pekora Ch. \u514e\u7530\u307a\u3053\u3089",
@@ -58,9 +46,7 @@ let liveData =[
         "actualStartTime": "2023-07-08T08:30:59Z",
         "scheduledStartTime": "2023-07-08T08:30:00Z",
         "videolink": "https://www.youtube.com/watch?v=gc3lD-vwI_c"
-    }
-]
-let upcomingData =[
+    },
     {
         "id": "GgmXKfDcEgs",
         "title": "\u3010\u8d85\u63a2\u5075\u4e8b\u4ef6\u7c3f \u30ec\u30a4\u30f3\u30b3\u30fc\u30c9\u3011\u30c0\u30f3\u30ed\u30f3\u5236\u4f5c\u9663\u306b\u3088\u308b\u65b0\u4f5c\u30b2\u30fc\u30e0\uff01\u5f85\u3063\u3066\u305f\uff5e\uff01\uff01\uff01\uff031\u3010\u30db\u30ed\u30e9\u30a4\u30d6/\u591c\u7a7a\u30e1\u30eb\u3011",
@@ -68,9 +54,13 @@ let upcomingData =[
         "channelThumbnail": "https://yt3.ggpht.com/I6f2LiL5tEL4ECQhPNJPvBkrf6WrKAS8nheCpTyyQSNKzCwBL2XJSGKxBMc6UNcUr1AR7hrjXw=s88-c-k-c0x00ffffff-no-rj",
         "thumbnail": "https://i.ytimg.com/vi/GgmXKfDcEgs/mqdefault_live.jpg",
         "duration": "P0D",
+        "concurrentViewers": "1349",
+        "actualStartTime": "2023-07-08T09:00:24Z",
         "scheduledStartTime": "2023-07-08T09:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=GgmXKfDcEgs"
-    },
+    }
+]
+let upcomingData =[
     {
         "id": "aTUT-uhbbps",
         "title": "\u3010 \u30d7\u30ea\u30b3\u30cdR \u3011\u65e5\u6642\u672a\u78ba\u5b9a\uff01\uff01\uff01\u30ac\u30c1\u30e3\u306e\u6642\u9593\ud83d\udc93\u3010\u59eb\u68ee\u30eb\u30fc\u30ca/\u30db\u30ed\u30e9\u30a4\u30d6\u3011",
@@ -162,6 +152,16 @@ let upcomingData =[
         "videolink": "https://www.youtube.com/watch?v=aZ2kbGl218E"
     },
     {
+        "id": "E03LhDuqzJM",
+        "title": "\u3010APEX\u3011\u25bc \u306a\u304b\u3088\u304f \u3042\u305d\u307c\u3046\u3010\u30db\u30ed\u30e9\u30a4\u30d6 / \u661f\u8857\u3059\u3044\u305b\u3044\u3011",
+        "channelTitle": "Suisei Channel",
+        "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqPRYV-Bg1-4gAtqVwo6tWtgPkTMtLm-STXRb31Rqg=s88-c-k-c0x00ffffff-no-rj-mo",
+        "thumbnail": "https://i.ytimg.com/vi/E03LhDuqzJM/mqdefault_live.jpg",
+        "duration": "P0D",
+        "scheduledStartTime": "2023-07-08T12:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=E03LhDuqzJM"
+    },
+    {
         "id": "edgZ7hX6oYU",
         "title": "\u3010#\u306d\u307d\u3089\u307cT4U\u3011\u30db\u30ed\u30e9\u30a4\u30d65\u671f\u751f\u30e9\u30a4\u30d6\uff01hololive 5th Generation Live\"Twinkle 4 You\" \u3057\u3057\u308d\u3093\u5fdc\u63f4\u4f1a\u5834\u3010\u7345\u767d\u307c\u305f\u3093/\u30db\u30ed\u30e9\u30a4\u30d6\u3011",
         "channelTitle": "Botan Ch.\u7345\u767d\u307c\u305f\u3093",
@@ -250,6 +250,16 @@ let upcomingData =[
         "duration": "P0D",
         "scheduledStartTime": "2023-07-08T14:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=7CYmL78QqQw"
+    },
+    {
+        "id": "spg8HDFVaBU",
+        "title": "\u3010FFXVI\u3011 Pan-fried Mahi-mahi \u3010#2\u3011",
+        "channelTitle": "Ninomae Ina'nis Ch. hololive-EN",
+        "channelThumbnail": "https://yt3.ggpht.com/f4uYWHJxiGwyXm8NUlm818N1MRnywtgL6wM8JdWqWsKBzI7v1eg8dxDWG7igkWuukUSiufydqPg=s88-c-k-c0x00ffffff-no-rj",
+        "thumbnail": "https://i.ytimg.com/vi/spg8HDFVaBU/mqdefault_live.jpg",
+        "duration": "P0D",
+        "scheduledStartTime": "2023-07-08T21:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=spg8HDFVaBU"
     },
     {
         "id": "-5Ahlkg41IA",
