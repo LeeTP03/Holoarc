@@ -1,17 +1,5 @@
 let liveData =[
     {
-        "id": "PaKPwSv7_lg",
-        "title": "\u3010\u30ad\u30f3\u30b0\u30c0\u30e0\u30cf\u30fc\u30c4\uff12\u3011\u65b0\u305f\u306bKH2\u306e\u4e16\u754c\u3092\u65c5\u3059\u308b\u305e\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\uff01\u307a\u3053\uff01\u3010\u30db\u30ed\u30e9\u30a4\u30d6/\u514e\u7530\u307a\u3053\u3089\u3011\u203b\u30cd\u30bf\u30d0\u30ec\u3042\u308a",
-        "channelTitle": "Pekora Ch. \u514e\u7530\u307a\u3053\u3089",
-        "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqP37U8cdmOVTEbm7mv2Oy_aVe-Gb9xLDt1CUm6eGQ=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/PaKPwSv7_lg/mqdefault_live.jpg",
-        "duration": "P0D",
-        "concurrentViewers": "16295",
-        "actualStartTime": "2023-07-08T04:00:09Z",
-        "scheduledStartTime": "2023-07-08T04:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=PaKPwSv7_lg"
-    },
-    {
         "id": "Zg8c-p0EXX4",
         "title": "\u3010\uff032\u3011\u30da\u30eb\u30bd\u30ca5 \u30b6\u30fb\u30ed\u30a4\u30e4\u30eb\u3084\u308b\u3057\u3085\u3070\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\uff01\uff01\uff01\uff01: P5R\u3010\u203b\u30cd\u30bf\u30d0\u30ec\u3042\u308a\u3011",
         "channelTitle": "Subaru Ch. \u5927\u7a7a\u30b9\u30d0\u30eb",
@@ -30,7 +18,7 @@ let liveData =[
         "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqOFApAcK-rowC5S5SRijnDOvPEgalpvSx8y-kigkA=s88-c-k-c0x00ffffff-no-rj",
         "thumbnail": "https://i.ytimg.com/vi/htKTQyj8rlQ/mqdefault_live.jpg",
         "duration": "P0D",
-        "concurrentViewers": "1648",
+        "concurrentViewers": "1526",
         "actualStartTime": "2023-07-08T06:58:52Z",
         "scheduledStartTime": "2023-07-08T07:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=htKTQyj8rlQ"
@@ -58,6 +46,30 @@ let liveData =[
         "actualStartTime": "2023-07-08T09:00:24Z",
         "scheduledStartTime": "2023-07-08T09:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=GgmXKfDcEgs"
+    },
+    {
+        "id": "7ja0qin_Nzg",
+        "title": "\u3010 \u65e5\u672c\u8a9eONLY \u3011\u30db\u30ed\u30b5\u30de\u30fc\uff01\uff01\uff01\u590f\uff01\uff01\u6d74\u8863\uff01\u9752\u6625\u30a2\u30fc\u30ab\u30a4\u30d6\uff01\uff01\u3010 iofi / hololive \u3011",
+        "channelTitle": "Airani Iofifteen Channel hololive-ID",
+        "channelThumbnail": "https://yt3.ggpht.com/bF91weVtAIL7Uhnr2HVwtCTLVKK5kVsn4FC_Ze3Gl8rkSsEjDwyey3AbQ1PDfJQ1Oeac5cePeg=s88-c-k-c0x00ffffff-no-rj",
+        "thumbnail": "https://i.ytimg.com/vi/7ja0qin_Nzg/mqdefault_live.jpg",
+        "duration": "P0D",
+        "concurrentViewers": "885",
+        "actualStartTime": "2023-07-08T09:59:44Z",
+        "scheduledStartTime": "2023-07-08T10:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=7ja0qin_Nzg"
+    },
+    {
+        "id": "VBYi6A9AYac",
+        "title": "\u3010ARCHIVED KARAOKE\u3011WANNA HEAR ZOMBIE NOISES?!\u3010Hololive Indonesia 2nd Generation\u3011",
+        "channelTitle": "Kureiji Ollie Ch. hololive-ID",
+        "channelThumbnail": "https://yt3.ggpht.com/okAbP3i7wWmBb4JaDuqjkFsGzMCg-05LOu5K0kKGoVwhGWsLUwun8pnXTzQ_uNBoimpiVoLp4D8=s88-c-k-c0x00ffffff-no-rj",
+        "thumbnail": "https://i.ytimg.com/vi/VBYi6A9AYac/mqdefault_live.jpg",
+        "duration": "P0D",
+        "concurrentViewers": "968",
+        "actualStartTime": "2023-07-08T10:00:03Z",
+        "scheduledStartTime": "2023-07-08T09:59:51Z",
+        "videolink": "https://www.youtube.com/watch?v=VBYi6A9AYac"
     }
 ]
 let upcomingData =[
@@ -70,16 +82,6 @@ let upcomingData =[
         "duration": "P0D",
         "scheduledStartTime": "2023-07-08T10:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=aTUT-uhbbps"
-    },
-    {
-        "id": "7ja0qin_Nzg",
-        "title": "\u3010 \u65e5\u672c\u8a9eONLY \u3011\u30db\u30ed\u30b5\u30de\u30fc\uff01\uff01\uff01\u590f\uff01\uff01\u6d74\u8863\uff01\u9752\u6625\u30a2\u30fc\u30ab\u30a4\u30d6\uff01\uff01\u3010 iofi / hololive \u3011",
-        "channelTitle": "Airani Iofifteen Channel hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/bF91weVtAIL7Uhnr2HVwtCTLVKK5kVsn4FC_Ze3Gl8rkSsEjDwyey3AbQ1PDfJQ1Oeac5cePeg=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/7ja0qin_Nzg/mqdefault_live.jpg",
-        "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T10:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=7ja0qin_Nzg"
     },
     {
         "id": "VBYi6A9AYac",
