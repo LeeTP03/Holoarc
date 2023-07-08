@@ -12,18 +12,6 @@ let liveData =[
         "videolink": "https://www.youtube.com/watch?v=GgmXKfDcEgs"
     },
     {
-        "id": "7ja0qin_Nzg",
-        "title": "\u3010 \u65e5\u672c\u8a9eONLY \u3011\u30db\u30ed\u30b5\u30de\u30fc\uff01\uff01\uff01\u590f\uff01\uff01\u6d74\u8863\uff01\u9752\u6625\u30a2\u30fc\u30ab\u30a4\u30d6\uff01\uff01\u3010 iofi / hololive \u3011",
-        "channelTitle": "Airani Iofifteen Channel hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/bF91weVtAIL7Uhnr2HVwtCTLVKK5kVsn4FC_Ze3Gl8rkSsEjDwyey3AbQ1PDfJQ1Oeac5cePeg=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/7ja0qin_Nzg/mqdefault_live.jpg",
-        "duration": "P0D",
-        "concurrentViewers": "885",
-        "actualStartTime": "2023-07-08T09:59:44Z",
-        "scheduledStartTime": "2023-07-08T10:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=7ja0qin_Nzg"
-    },
-    {
         "id": "VBYi6A9AYac",
         "title": "\u3010ARCHIVED KARAOKE\u3011WANNA HEAR ZOMBIE NOISES?!\u3010Hololive Indonesia 2nd Generation\u3011",
         "channelTitle": "Kureiji Ollie Ch. hololive-ID",
@@ -58,19 +46,57 @@ let liveData =[
         "actualStartTime": "2023-07-08T11:03:16Z",
         "scheduledStartTime": "2023-07-08T11:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=_38SMLUt9RM"
-    }
-]
-let upcomingData =[
+    },
+    {
+        "id": "ltyB-i2ulDA",
+        "title": "\u3010TALK\u3011PILK & SUPER SPICY YAKISOBA COMBO COMING RIGHT UP (talk+SC!)\u3010Pavolia Reine/hololiveID 2nd gen\u3011",
+        "channelTitle": "Pavolia Reine Ch. hololive-ID",
+        "channelThumbnail": "https://yt3.ggpht.com/3Wp-qrvmEyR4I4CcqrzbERgqjZkKWpptZTV9veusoh9ZeIdBTx7WfUB3uT8bnMp5ApebFERHZ9I=s88-c-k-c0x00ffffff-no-rj",
+        "thumbnail": "https://i.ytimg.com/vi/ltyB-i2ulDA/mqdefault_live.jpg",
+        "duration": "P0D",
+        "concurrentViewers": "620",
+        "actualStartTime": "2023-07-08T12:01:18Z",
+        "scheduledStartTime": "2023-07-08T12:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=ltyB-i2ulDA"
+    },
     {
         "id": "aTUT-uhbbps",
-        "title": "\u3010 \u30d7\u30ea\u30b3\u30cdR \u3011\u65e5\u6642\u672a\u78ba\u5b9a\uff01\uff01\uff01\u30ac\u30c1\u30e3\u306e\u6642\u9593\ud83d\udc93\u3010\u59eb\u68ee\u30eb\u30fc\u30ca/\u30db\u30ed\u30e9\u30a4\u30d6\u3011",
+        "title": "\u3010 \u30d7\u30ea\u30b3\u30cdR \u3011\u30ac\u30c1\u30e3\u306e\u6642\u9593\uff5e\ud83d\udc93\u6c34\u7740\u30cd\u30cd\u30ab\u51fa\u3059\u306e\u3089\uff01\u3010\u59eb\u68ee\u30eb\u30fc\u30ca/\u30db\u30ed\u30e9\u30a4\u30d6\u3011",
         "channelTitle": "Luna Ch. \u59eb\u68ee\u30eb\u30fc\u30ca",
         "channelThumbnail": "https://yt3.ggpht.com/O7m_5HMY_O8yxR3Jhn9cEO1fLNL_GifMERExnAmfY7JrdTRsTjNijTcNYTPN97Llj3zGn8Susw=s88-c-k-c0x00ffffff-no-rj",
         "thumbnail": "https://i.ytimg.com/vi/aTUT-uhbbps/mqdefault_live.jpg",
         "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T10:00:00Z",
+        "concurrentViewers": "6009",
+        "actualStartTime": "2023-07-08T12:02:35Z",
+        "scheduledStartTime": "2023-07-08T12:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=aTUT-uhbbps"
     },
+    {
+        "id": "--oFqKw2aA8",
+        "title": "\u3010APEX\u3011APEX\u306e\u4e2d\u5fc3\u3067\u30b9\u30c8\u30c3\u30d4\u30f3\u30b0\u3057\u306a\u304c\u3089\u611b\u3092\u3055\u3051\u3076with\u767d\u4e0a\u30d5\u30d6\u30ad\u3055\u3093\u661f\u8857\u3059\u3044\u305b\u3044\u3055\u3093 #\u307b\u3057\u3089\u3063\u3077\u3010\u30e9\u30d7\u30e9\u30b9\u30c0\u30fc\u30af\u30cd\u30b9/\u30db\u30ed\u30e9\u30a4\u30d6\u3011",
+        "channelTitle": "Laplus ch. \u30e9\u30d7\u30e9\u30b9\u30fb\u30c0\u30fc\u30af\u30cd\u30b9 - holoX -",
+        "channelThumbnail": "https://yt3.ggpht.com/roGS60A8a_lDbVakIg1JU3u3hbtjHSTilMGHMizuPKh7tuoY2nl46raxuW2f_83IKFGMjL6Z=s88-c-k-c0x00ffffff-no-rj",
+        "thumbnail": "https://i.ytimg.com/vi/--oFqKw2aA8/mqdefault_live.jpg",
+        "duration": "P0D",
+        "concurrentViewers": "7432",
+        "actualStartTime": "2023-07-08T12:04:14Z",
+        "scheduledStartTime": "2023-07-08T12:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=--oFqKw2aA8"
+    },
+    {
+        "id": "E03LhDuqzJM",
+        "title": "\u3010APEX\u3011\u25bc \u306a\u304b\u3088\u304f \u3042\u305d\u307c\u3046\u3010\u30db\u30ed\u30e9\u30a4\u30d6 / \u661f\u8857\u3059\u3044\u305b\u3044\u3011",
+        "channelTitle": "Suisei Channel",
+        "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqPRYV-Bg1-4gAtqVwo6tWtgPkTMtLm-STXRb31Rqg=s88-c-k-c0x00ffffff-no-rj-mo",
+        "thumbnail": "https://i.ytimg.com/vi/E03LhDuqzJM/mqdefault_live.jpg",
+        "duration": "P0D",
+        "concurrentViewers": "19003",
+        "actualStartTime": "2023-07-08T12:04:15Z",
+        "scheduledStartTime": "2023-07-08T12:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=E03LhDuqzJM"
+    }
+]
+let upcomingData =[
     {
         "id": "0lium2gC96s",
         "title": "\u3010APEX\u3011\uff15\u5104\u5e74\u3076\u308a\u306e\u3042\u307a\u307a\u306b\u5897\u3048\u308b\u304a\u3058\u3055\u3093\u3068\u72d0\u53c2\u6226\uff01\u3010\u30db\u30ed\u30e9\u30a4\u30d6/\u767d\u4e0a\u30d5\u30d6\u30ad/\u30e9\u30d7\u30e9\u30b9\u30fb\u30c0\u30fc\u30af\u30cd\u30b9/\u661f\u8857\u3059\u3044\u305b\u3044\u3011",
@@ -80,16 +106,6 @@ let upcomingData =[
         "duration": "P0D",
         "scheduledStartTime": "2023-07-08T12:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=0lium2gC96s"
-    },
-    {
-        "id": "--oFqKw2aA8",
-        "title": "\u3010APEX\u3011APEX\u306e\u4e2d\u5fc3\u3067\u30b9\u30c8\u30c3\u30d4\u30f3\u30b0\u3057\u306a\u304c\u3089\u611b\u3092\u3055\u3051\u3076with\u767d\u4e0a\u30d5\u30d6\u30ad\u3055\u3093\u661f\u8857\u3059\u3044\u305b\u3044\u3055\u3093\u3010\u30e9\u30d7\u30e9\u30b9\u30c0\u30fc\u30af\u30cd\u30b9/\u30db\u30ed\u30e9\u30a4\u30d6\u3011",
-        "channelTitle": "Laplus ch. \u30e9\u30d7\u30e9\u30b9\u30fb\u30c0\u30fc\u30af\u30cd\u30b9 - holoX -",
-        "channelThumbnail": "https://yt3.ggpht.com/roGS60A8a_lDbVakIg1JU3u3hbtjHSTilMGHMizuPKh7tuoY2nl46raxuW2f_83IKFGMjL6Z=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/--oFqKw2aA8/mqdefault_live.jpg",
-        "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T12:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=--oFqKw2aA8"
     },
     {
         "id": "GvPK5vJCg18",
@@ -102,16 +118,6 @@ let upcomingData =[
         "videolink": "https://www.youtube.com/watch?v=GvPK5vJCg18"
     },
     {
-        "id": "ltyB-i2ulDA",
-        "title": "\u3010TALK\u3011PILK & SUPER SPICY YAKISOBA COMBO COMING RIGHT UP (talk+SC!)\u3010Pavolia Reine/hololiveID 2nd gen\u3011",
-        "channelTitle": "Pavolia Reine Ch. hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/3Wp-qrvmEyR4I4CcqrzbERgqjZkKWpptZTV9veusoh9ZeIdBTx7WfUB3uT8bnMp5ApebFERHZ9I=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/ltyB-i2ulDA/mqdefault_live.jpg",
-        "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T12:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=ltyB-i2ulDA"
-    },
-    {
         "id": "aZ2kbGl218E",
         "title": "\u3010Free Talk\u3011VACATION STORIES (we haven't talked for a while so LET'S TALK ABOUT ANYTHING \ud83d\ude20)",
         "channelTitle": "Kobo Kanaeru Ch. hololive-ID",
@@ -120,16 +126,6 @@ let upcomingData =[
         "duration": "P0D",
         "scheduledStartTime": "2023-07-08T12:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=aZ2kbGl218E"
-    },
-    {
-        "id": "E03LhDuqzJM",
-        "title": "\u3010APEX\u3011\u25bc \u306a\u304b\u3088\u304f \u3042\u305d\u307c\u3046\u3010\u30db\u30ed\u30e9\u30a4\u30d6 / \u661f\u8857\u3059\u3044\u305b\u3044\u3011",
-        "channelTitle": "Suisei Channel",
-        "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqPRYV-Bg1-4gAtqVwo6tWtgPkTMtLm-STXRb31Rqg=s88-c-k-c0x00ffffff-no-rj-mo",
-        "thumbnail": "https://i.ytimg.com/vi/E03LhDuqzJM/mqdefault_live.jpg",
-        "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T12:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=E03LhDuqzJM"
     },
     {
         "id": "edgZ7hX6oYU",
