@@ -1,72 +1,174 @@
 <script>
-    import LiveStreamApp from './LiveStreamApp.svelte';
-    import UpcomingStreamApp from './UpcomingStreamApp.svelte';
-    import ButtonRow from './ButtonRow.svelte';
-  
-  </script>
-  
-  <main>
-    <div class=sidepanel>
-      <div class=side>
-          <ButtonRow></ButtonRow>
-      </div>
-      <div style="margin-left: 140px;">
-        <div>
-          <h1 style='text-align:center;'>Live!</h1>
-          <LiveStreamApp></LiveStreamApp>
-        </div>
-  
-        <div>
-          <h1 style="text-align: center;" >Upcoming Streams</h1>
-          <UpcomingStreamApp></UpcomingStreamApp>
-        </div>
-  
-      </div>
+  import ButtonRow from './ButtonRow.svelte';
+
+  export let data
+
+  let now = new Date()
+
+  function hourString(int){
+      if (Math.floor(int) >= 10){
+          return int.toString().substring(0,2) + ' hours'
+      }
+      if (Math.floor(int) > 1){
+        return int.toString().substring(0,1) + ' hours'
+      }
+      else if (Math.floor(int) == 1){
+          return int.toString().substring(0,1) + " hour"
+      }
+      else if (Math.floor(int) == 0){
+          int = int / 100 * 60
+          return int.toString().substring(2,4) + " mins"
+      }
+  }
+
+  for (let i = 0; i < data.live.length; i++){
+      let utcDate = data.live[i]['actualStartTime']
+      let localDate = new Date(utcDate)
+      data.live[i]['localTime'] = localDate.toISOString().substring(11,19)
+      const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
+      data.live[i]['timeLive'] = 'for ' + hourString(hourDiff)
+  }
+
+  for (let i = 0; i < data.upcoming.length; i++){
+      let utcDate = data.upcoming[i]['scheduledStartTime']
+      let localDate = new Date(utcDate)
+      const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
+      data.upcoming[i]['timeDiff'] = 'Starts in ' + hourString(hourDiff)
+  }
+
+</script>
+
+<main>
+  <div class=sidepanel>
+    <div class=side>
+        <ButtonRow></ButtonRow>
     </div>
-    
-  </main>
+    <div style="margin-left: 140px;">
+      <div>
+        <h1 style='text-align:center;'>Live!</h1>
+        <div class=outerdiv>
+          {#each data.live as dt}
+              <div class=div>
+                  <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
+                  <div style="display:flex; flex-direction:rowl">
+                      <img class=channelicon style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
+                      <div class=worddiv>
+                          <p class=vidtitle2><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                          <p class=channelname>{dt.channelTitle}</p>
+                          <div style='display:flex'>
+                              <p class=live>Live now</p>
+                              <p>{dt.timeLive}</p>
+                              <p style="color:grey; padding-left: 7px">{dt.concurrentViewers} viewers</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          {/each}
+      </div>
+      </div>
+
+      <div>
+        <h1 style="text-align: center;" >Upcoming Streams</h1>
+        <div class=outerdiv>
+          {#each data.upcoming as dt}
+              <div class=div>
+                  <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
+                  <div style="display:flex; flex-direction:rowl">
+                      <img class=channelicon style="margin:auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
+                      <div class=worddiv>
+                          <p class=vidtitle2><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                          <p class=channelname>{dt.channelTitle}</p>
+                          <p class="channelname">{dt.timeDiff}</p>
+                      </div>
+                  </div>
+                  
+              </div>
+          {/each}
+      </div>
+      </div>
+
+    </div>
+  </div>
   
-  <style>
-    .button {
-      background-color: rgb(169, 167, 167);
-  
-    }
-    .button:hover{
-      background-color: grey;
-    }
-  
-    .side {
-      background-color: rgb(52, 52, 52);
-      padding: 4px;
-      position: fixed;
-      height: 100vh;
-    }
-  
-    .sidepanel {
-      display: flex;
+</main>
+
+<style>
+
+  .side {
+    background-color: rgb(52, 52, 52);
+    padding: 4px;
+    position: fixed;
+    height: 100vh;
+  }
+
+  .sidepanel {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  p {
+      margin-top : -8px;
+  }
+
+  .div {
+      height: 300px;
+      width: 320px;
+      /* outline: 5px dotted green; */
+
+  }
+
+  .outerdiv {
+      width : auto;
+      display:flex;
       flex-direction: row;
+      justify-content: flex-start;
       gap: 20px;
-    }
-  
-    .logo {
-      height: 6em;
-      padding: 1.5em;
-      will-change: filter;
-      transition: filter 300ms;
-    }
-    .logo:hover {
-      filter: drop-shadow(0 0 2em #646cffaa);
-    }
-    .logo.svelte:hover {
-      filter: drop-shadow(0 0 2em #ff3e00aa);
-    }
-    .read-the-docs {
-      color: #7a7a7a;
-    }
-    .divflex{
-      display: flex;
-      flex-direction: row;
+      padding-left: 50px;
       flex-wrap: wrap;
-      gap: 15px; 
-    }
-  </style>
+      /* outline: 5px dotted green; */
+  }
+
+  .channelicon {
+      height: 50px;
+      /* outline: 5px dotted green; */
+      border-radius: 50%;
+  }
+
+  .worddiv {
+      display: flex;
+      flex-direction: column;
+      line-height: 20px;
+  }
+
+  .vidtitle2 {
+      padding-top: 5px;
+      padding-left: 7px;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; /* number of lines to show */
+      line-clamp: 2;
+      color: white;
+  }
+
+  .channelname{
+      padding-left: 7px;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1; /* number of lines to show */
+      line-clamp: 1;
+      color: white;
+  }
+
+  .live{
+      color : rgb(249, 71, 71);
+      padding-left: 7px;
+      padding-right: 7px;
+  }
+</style>
