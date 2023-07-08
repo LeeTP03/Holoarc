@@ -1,27 +1,22 @@
 <script>
-    import LiveStreamApp from './LiveStreamApp.svelte';
-    import UpcomingStreamApp from './UpcomingStreamApp.svelte';
-    import ButtonRow from './ButtonRow.svelte';
-  
+    import ButtonRow from "../ButtonRow.svelte";
+    import YtEmbed from './YTEmbed.svelte';
   </script>
   
   <main>
     <div class=sidepanel>
+
       <div class=side>
           <ButtonRow></ButtonRow>
       </div>
-      <div style="margin-left: 140px;">
+        
+      <div style="margin-left: 140px">
         <div>
-          <h1 style='text-align:center;'>Live!</h1>
-          <LiveStreamApp></LiveStreamApp>
+          <h1 style='text-align: center'>Watch</h1>
+          <YtEmbed></YtEmbed>
         </div>
-  
-        <div>
-          <h1 style="text-align: center;" >Upcoming Streams</h1>
-          <UpcomingStreamApp></UpcomingStreamApp>
-        </div>
-  
       </div>
+
     </div>
     
   </main>
@@ -38,8 +33,8 @@
     .side {
       background-color: rgb(52, 52, 52);
       padding: 4px;
-      position: fixed;
       height: 100vh;
+      position: fixed;
     }
   
     .sidepanel {
@@ -70,3 +65,4 @@
       gap: 15px; 
     }
   </style>
+  
