@@ -2,39 +2,6 @@
 	"version": 3,
 	"routes": [
 		{
-			"src": "/activities",
-			"dest": "/activities/"
-		},
-		{
-			"src": "/activities/",
-			"status": 308,
-			"headers": {
-				"Location": "/activities"
-			}
-		},
-		{
-			"src": "/archive",
-			"dest": "/archive/"
-		},
-		{
-			"src": "/archive/",
-			"status": 308,
-			"headers": {
-				"Location": "/archive"
-			}
-		},
-		{
-			"src": "/favourite",
-			"dest": "/favourite/"
-		},
-		{
-			"src": "/favourite/",
-			"status": 308,
-			"headers": {
-				"Location": "/favourite"
-			}
-		},
-		{
 			"src": "/_app/immutable/.+",
 			"headers": {
 				"cache-control": "public, immutable, max-age=31536000"
@@ -44,22 +11,37 @@
 			"handle": "filesystem"
 		},
 		{
+			"src": "^/?$",
+			"dest": "/__root__?__pathname=/"
+		},
+		{
+			"src": "^/?/__data.json$",
+			"dest": "/__root__/__data.json?__pathname=/"
+		},
+		{
+			"src": "^/activities/?$",
+			"dest": "/activities?__pathname=/activities"
+		},
+		{
+			"src": "^/activities/?/__data.json$",
+			"dest": "/activities/__data.json?__pathname=/activities"
+		},
+		{
+			"src": "^/archive/?$",
+			"dest": "/archive?__pathname=/archive"
+		},
+		{
+			"src": "^/archive/?/__data.json$",
+			"dest": "/archive/__data.json?__pathname=/archive"
+		},
+		{
+			"src": "^/favourite/?(?:/__data.json)?$",
+			"dest": "/fn-1"
+		},
+		{
 			"src": "/.*",
 			"dest": "/fn"
 		}
 	],
-	"overrides": {
-		"index.html": {
-			"path": ""
-		},
-		"activities.html": {
-			"path": "activities"
-		},
-		"archive.html": {
-			"path": "archive"
-		},
-		"favourite.html": {
-			"path": "favourite"
-		}
-	}
+	"overrides": {}
 }
