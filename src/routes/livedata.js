@@ -12,18 +12,6 @@ let liveData =[
         "videolink": "https://www.youtube.com/watch?v=GgmXKfDcEgs"
     },
     {
-        "id": "VBYi6A9AYac",
-        "title": "\u3010ARCHIVED KARAOKE\u3011WANNA HEAR ZOMBIE NOISES?!\u3010Hololive Indonesia 2nd Generation\u3011",
-        "channelTitle": "Kureiji Ollie Ch. hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/okAbP3i7wWmBb4JaDuqjkFsGzMCg-05LOu5K0kKGoVwhGWsLUwun8pnXTzQ_uNBoimpiVoLp4D8=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/VBYi6A9AYac/mqdefault_live.jpg",
-        "duration": "P0D",
-        "concurrentViewers": "968",
-        "actualStartTime": "2023-07-08T10:00:03Z",
-        "scheduledStartTime": "2023-07-08T09:59:51Z",
-        "videolink": "https://www.youtube.com/watch?v=VBYi6A9AYac"
-    },
-    {
         "id": "tX8Bun8AUYQ",
         "title": "T4U\u6253\u3061\u4e0a\u3052\u6669\u914c\uff01 #\u306d\u306d\u3061\u3078\u4f1d\u3048\u305f\u3044",
         "channelTitle": "Nene Ch.\u6843\u9234\u306d\u306d",
@@ -46,6 +34,18 @@ let liveData =[
         "actualStartTime": "2023-07-08T11:03:16Z",
         "scheduledStartTime": "2023-07-08T11:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=_38SMLUt9RM"
+    },
+    {
+        "id": "aZ2kbGl218E",
+        "title": "\u3010Free Talk\u3011VACATION STORIES (we haven't talked for a while so LET'S TALK ABOUT ANYTHING \ud83d\ude20)",
+        "channelTitle": "Kobo Kanaeru Ch. hololive-ID",
+        "channelThumbnail": "https://yt3.ggpht.com/Zi6DMbqTrk8jpNKnJgbw_NxGnggsKX1omQnPeHxrZTmrVmon7zfmg5Q4XbqsHO9AMidW49zCPw=s88-c-k-c0x00ffffff-no-rj",
+        "thumbnail": "https://i.ytimg.com/vi/aZ2kbGl218E/mqdefault_live.jpg",
+        "duration": "P0D",
+        "concurrentViewers": "4705",
+        "actualStartTime": "2023-07-08T11:59:51Z",
+        "scheduledStartTime": "2023-07-08T12:00:00Z",
+        "videolink": "https://www.youtube.com/watch?v=aZ2kbGl218E"
     },
     {
         "id": "ltyB-i2ulDA",
@@ -94,19 +94,21 @@ let liveData =[
         "actualStartTime": "2023-07-08T12:04:15Z",
         "scheduledStartTime": "2023-07-08T12:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=E03LhDuqzJM"
-    }
-]
-let upcomingData =[
+    },
     {
         "id": "0lium2gC96s",
-        "title": "\u3010APEX\u3011\uff15\u5104\u5e74\u3076\u308a\u306e\u3042\u307a\u307a\u306b\u5897\u3048\u308b\u304a\u3058\u3055\u3093\u3068\u72d0\u53c2\u6226\uff01\u3010\u30db\u30ed\u30e9\u30a4\u30d6/\u767d\u4e0a\u30d5\u30d6\u30ad/\u30e9\u30d7\u30e9\u30b9\u30fb\u30c0\u30fc\u30af\u30cd\u30b9/\u661f\u8857\u3059\u3044\u305b\u3044\u3011",
+        "title": "\u3010APEX\u3011\uff15\u5104\u5e74\u3076\u308a\u306e\u3042\u307a\u307a\u306b\u5897\u3048\u308b\u304a\u3058\u3055\u3093\u3068\u72d0\u53c2\u6226\uff01\u3010#\u307b\u3057\u3089\u3063\u3077",
         "channelTitle": "\u30d5\u30d6\u30adCh\u3002\u767d\u4e0a\u30d5\u30d6\u30ad",
         "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqOR_NzQfQ-w70LMrrtl9FfppVmIkxDaeDd-wxLzLw=s88-c-k-c0x00ffffff-no-rj",
         "thumbnail": "https://i.ytimg.com/vi/0lium2gC96s/mqdefault_live.jpg",
         "duration": "P0D",
+        "concurrentViewers": "12543",
+        "actualStartTime": "2023-07-08T12:05:42Z",
         "scheduledStartTime": "2023-07-08T12:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=0lium2gC96s"
-    },
+    }
+]
+let upcomingData =[
     {
         "id": "GvPK5vJCg18",
         "title": "\u3010NEW OUTFIT || \u65b0\u8863\u88c5\u3011ONE PIECE x Mori Calliope! Plus KARAOKE!! #\u30ab\u30ea\u30aa\u30da\u30ef\u30f3\u30d4",
@@ -116,16 +118,6 @@ let upcomingData =[
         "duration": "P0D",
         "scheduledStartTime": "2023-07-08T12:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=GvPK5vJCg18"
-    },
-    {
-        "id": "aZ2kbGl218E",
-        "title": "\u3010Free Talk\u3011VACATION STORIES (we haven't talked for a while so LET'S TALK ABOUT ANYTHING \ud83d\ude20)",
-        "channelTitle": "Kobo Kanaeru Ch. hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/Zi6DMbqTrk8jpNKnJgbw_NxGnggsKX1omQnPeHxrZTmrVmon7zfmg5Q4XbqsHO9AMidW49zCPw=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/aZ2kbGl218E/mqdefault_live.jpg",
-        "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T12:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=aZ2kbGl218E"
     },
     {
         "id": "edgZ7hX6oYU",
