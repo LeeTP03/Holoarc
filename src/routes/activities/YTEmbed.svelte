@@ -51,7 +51,7 @@
                     <div style="display:flex; flex-direction:rowl">
                         <img id={dt.videolink} class=channelicon style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
                         <div class=worddiv>
-                            <p class=vidtitle2><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                            <p class=vidtitle2>{dt.title}</p>
                             <p class=channelname>{dt.channelTitle}</p>
                             <div style='display:flex'>
                                 <p class=live>Live now</p>

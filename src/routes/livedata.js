@@ -12,18 +12,6 @@ let liveData =[
         "videolink": "https://www.youtube.com/watch?v=Zg8c-p0EXX4"
     },
     {
-        "id": "htKTQyj8rlQ",
-        "title": "\u3010hololiveId\u3011Melatonin : beat and rythm practice ?\u3010Ayunda Risu\u3011",
-        "channelTitle": "Ayunda Risu Ch. hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/ytc/AGIKgqOFApAcK-rowC5S5SRijnDOvPEgalpvSx8y-kigkA=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/htKTQyj8rlQ/mqdefault_live.jpg",
-        "duration": "P0D",
-        "concurrentViewers": "1526",
-        "actualStartTime": "2023-07-08T06:58:52Z",
-        "scheduledStartTime": "2023-07-08T07:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=htKTQyj8rlQ"
-    },
-    {
         "id": "gc3lD-vwI_c",
         "title": "\u3010Only UP!\u3011\uff12\u56de\u76ee\u3010\u30db\u30ed\u30e9\u30a4\u30d6/\u5927\u795e\u30df\u30aa\u3011",
         "channelTitle": "Mio Channel \u5927\u795e\u30df\u30aa",
@@ -82,16 +70,6 @@ let upcomingData =[
         "duration": "P0D",
         "scheduledStartTime": "2023-07-08T10:00:00Z",
         "videolink": "https://www.youtube.com/watch?v=aTUT-uhbbps"
-    },
-    {
-        "id": "VBYi6A9AYac",
-        "title": "\u3010ARCHIVED KARAOKE\u3011WANNA HEAR ZOMBIE NOISES?!\u3010Hololive Indonesia 2nd Generation\u3011",
-        "channelTitle": "Kureiji Ollie Ch. hololive-ID",
-        "channelThumbnail": "https://yt3.ggpht.com/okAbP3i7wWmBb4JaDuqjkFsGzMCg-05LOu5K0kKGoVwhGWsLUwun8pnXTzQ_uNBoimpiVoLp4D8=s88-c-k-c0x00ffffff-no-rj",
-        "thumbnail": "https://i.ytimg.com/vi/VBYi6A9AYac/mqdefault_live.jpg",
-        "duration": "P0D",
-        "scheduledStartTime": "2023-07-08T10:00:00Z",
-        "videolink": "https://www.youtube.com/watch?v=VBYi6A9AYac"
     },
     {
         "id": "_38SMLUt9RM",
