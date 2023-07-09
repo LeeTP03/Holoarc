@@ -1,4 +1,6 @@
-const prerender = false;
+const config = {
+  runtime: "nodejs18.x"
+};
 export {
-  prerender
+  config
 };

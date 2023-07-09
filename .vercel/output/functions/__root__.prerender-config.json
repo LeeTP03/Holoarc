@@ -1,5 +1,5 @@
 {
-	"expiration": 10,
+	"expiration": 60,
 	"allowQuery": [
 		"__pathname"
 	],
