@@ -1,7 +1,7 @@
 import { supabase } from "$lib/supabaseClient";
 
 export async function load() { 
-  const { data } = await supabase.from("Archive").select().order( 'actualEndTime', { ascending : False});
+  const { data } = await supabase.from("Archive").select().order( 'actualEndTime', { ascending : false});
   return {
     archive: data ?? [],
   };
