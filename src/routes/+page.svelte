@@ -3,6 +3,7 @@
   import ButtonRow from './ButtonRow.svelte';
 
   export let data
+
   $: ({live} = data)
   $: ({upcoming} = data)
 
