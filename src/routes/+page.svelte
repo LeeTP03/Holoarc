@@ -1,7 +1,10 @@
 <script>
+    
   import ButtonRow from './ButtonRow.svelte';
 
   export let data
+  $: ({live} = data)
+  $: ({upcoming} = data)
 
   let now = new Date()
 
@@ -47,7 +50,7 @@
       <div>
         <h1 style='text-align:center;'>Live!</h1>
         <div class=outerdiv>
-          {#each data.live as dt}
+          {#each live as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
                   <div style="display:flex; flex-direction:rowl">
@@ -70,7 +73,7 @@
       <div>
         <h1 style="text-align: center;" >Upcoming Streams</h1>
         <div class=outerdiv>
-          {#each data.upcoming as dt}
+          {#each upcoming as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
                   <div style="display:flex; flex-direction:rowl">
@@ -84,7 +87,7 @@
                   
               </div>
           {/each}
-      </div>
+       </div>
       </div>
 
     </div>
