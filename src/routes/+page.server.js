@@ -1,8 +1,8 @@
 import { supabase } from "$lib/supabaseClient";
 
 export async function load() {
-    const { data: liveData } = await supabase.from('Live').select();
-    const { data: upcomingData } = await supabase.from('Upcoming').select();
+    const { data: liveData } = await supabase.from('Live').select().order( 'actualStartTime', { ascending : True});
+    const { data: upcomingData } = await supabase.from('Upcoming').select().order( 'scheduledStartTime', { ascending : True});
   
     return {
       live: liveData ?? [],
