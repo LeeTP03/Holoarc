@@ -7,18 +7,31 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"gh-pages": "npm run build && npx gh-pages -d build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
+		"@sveltejs/adapter-static": "^2.0.2",
+		"@sveltejs/adapter-vercel": "^3.0.1",
+		"@sveltejs/kit": "^1.22.1",
+		"autoprefixer": "^10.4.14",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
+		"gh-pages": "^5.0.0",
+		"postcss": "^8.4.25",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
+		"prisma": "^4.16.2",
 		"svelte": "^4.0.0",
+		"tailwindcss": "^3.3.2",
 		"vite": "^4.3.6"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@prisma/client": "^4.16.2",
+		"@supabase/supabase-js": "^2.26.0",
+		"dotenv": "^16.3.1"
+	}
 }

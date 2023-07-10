@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model country {
+  id   Int     @id @default(autoincrement()) @db.SmallInt
+  name String?
+}
+
+model Archive {
+  id                 String  @id(map: "archive_pkey") @unique(map: "archive_id_key")
+  title              String?
+  channelTitle       String?
+  channelThumbnail   String?
+  thumbnail          String?
+  duration           String?
+  scheduledStartTime String?
+  actualStartTime    String?
+  actualEndTime      String?
+  videolink          String?
+}
+
+model Live {
+  id                 String  @id(map: "liveTable_pkey")
+  title              String?
+  channelTitle       String?
+  channelThumbnail   String?
+  thumbnail          String?
+  duration           String?
+  concurrentViewers  String?
+  actualStartTime    String?
+  scheduledStartTime String?
+  videolink          String?
+}
+
+model Upcoming {
+  id                 String  @id(map: "upcomingTable_pkey")
+  title              String?
+  channelTitle       String?
+  channelThumbnail   String?
+  thumbnail          String?
+  duration           String?
+  scheduledStartTime String?
+  videolink          String?
+}
