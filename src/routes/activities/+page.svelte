@@ -41,23 +41,24 @@
     </div>
     <div style="margin-left: 140px">
       <div>
-        <h1 style='text-align: center'>Watch</h1>
+        <h1 class="text-6xl font-bold py-6 text-center">Watch</h1>
+        <h3 class="text-2xl font-bold pb-4 text-center">Select stream below</h3>
         <YtEmbed></YtEmbed>
-
-        <h1 style="text-align: center;">Select Stream</h1>
-        <h3 style="padding-left: 150px;">Click stream to watch</h3>
+        
+        <h1 class="text-6xl font-bold py-8 text-center">Select Stream</h1>
+        <h3 class="text-2xl font-bold pb-4 text-center">Click stream to watch</h3>
         <div class=outerdiv>
-      
+        
       {#each data.live as dt}
           <div class=div>
-              <button id={dt.id} onclick="embedvid(this.id)">
+              <button class='px-3 py-5' id={dt.id} onclick="embedvid(this.id)">
                   <img src={dt.thumbnail} alt='thumbnail'>
-                  <div style="display:flex; flex-direction:rowl">
+                  <div style="display:flex; flex-direction:row;">
                       <img id={dt.videolink} class=channelicon style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
-                      <div class=worddiv>
-                          <p class=vidtitle2>{dt.title}</p>
-                          <p class=channelname>{dt.channelTitle}</p>
-                          <div style='display:flex'>
+                      <div class="flex flex-col pt-4">
+                          <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2">{dt.title}</p>
+                          <p class="pt-2 pl-2 text-left">{dt.channelTitle}</p>
+                          <div class='pt-2 flex flex-row'>
                               <p class=live>Live now</p>
                               <p>{dt.timeLive}</p>
                               <p style="color:grey; padding-left: 7px">{dt.concurrentViewers} viewers</p>
@@ -81,7 +82,28 @@
   </div>
 </main>
 
-<style>  
+<style lang='postcss'>
+
+    button {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        /* padding: 0.6em 1.2em; */
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: #1a1a1a;
+        cursor: pointer;
+        transition: border-color 0.25s;
+    }
+    button:hover {
+        border-color: #646cff;
+    }
+
+    button:focus,
+    button:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+  
   .side {
     background-color: rgb(52, 52, 52);
     padding: 4px;
@@ -101,7 +123,7 @@
 
   .div {
       height: 300px;
-      width: 320px;
+      width: 340px;
       /* outline: 5px dotted green; */
 
   }

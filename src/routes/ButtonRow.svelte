@@ -11,9 +11,9 @@
 
 <main>
     <div class=flexbox>
-        <img class=logo alt='company logo' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Hololive_Production.png">
+        <a href="/"><img class=logo alt='company logo' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Hololive_Production.png"></a>
         {#each button as btn}
-         <a style="color: white;"href={btn.link}> <div class=button>{btn.name}</div></a>
+         <a style="color: white;"href={btn.link}> <div class="hover:bg-white text-white font-semibold hover:text-gray-700 py-2 px-4 ease-in-out transition-all duration-200 rounded">{btn.name}</div></a>
         {/each}
     </div>
 </main>
@@ -22,22 +22,10 @@
     .logo{
         width: 120px;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 50px;
     }
-    .button {
-    background-color: rgb(52, 52, 52);
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-
-  }
-
-  .button:hover {
-    background-color: grey;
-  }
 
   .flexbox{
     padding-top: 20px;

@@ -4,10 +4,11 @@
 </script>
 
 <div class=side>
-    <ButtonRow></ButtonRow>
+  <ButtonRow></ButtonRow>
 </div>
 
-<h1 style="padding-left: 200px;"> Work in progress, i have no idea how to do this ngl</h1>
+
+<h1 class=""> Work in progress, i have no idea how to do this ngl</h1>
 
 
 <style>

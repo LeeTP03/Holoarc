@@ -44,17 +44,17 @@
     </div>
     <div style="margin-left: 140px">
       <div>
-        <h1 style='text-align: center'>Archives</h1>
+        <h1 class="text-6xl font-bold py-6 text-center">Archives</h1>
         <div class=outerdiv>
           {#each data.archive as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
-                  <div style="display:flex; flex-direction:rowl">
-                      <img class=channelicon style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
-                      <div class=worddiv>
-                          <p class=vidtitle2><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
-                          <p class=channelname>{dt.channelTitle}</p>
-                          <p class=channelname style="color: grey;">{dt.timeLive}</p>
+                  <div style="display:flex; flex-direction:row;">
+                      <img class="rounded-full h-12" style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
+                      <div class="flex flex-col pt-3">
+                          <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                          <p class="pl-2 pt-2 text-blue-400">{dt.channelTitle}</p>
+                          <p class="pl-2 pt-2 text-stone-500">{dt.timeLive}</p>
                       </div>
                   </div>
               </div>
@@ -92,43 +92,6 @@
       height: 50px;
       /* outline: 5px dotted green; */
       border-radius: 50%;
-  }
-
-  .worddiv {
-      display: flex;
-      flex-direction: column;
-      line-height: 20px;
-  }
-
-  .vidtitle2 {
-      padding-top: 5px;
-      padding-left: 7px;
-      text-align: left;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2; /* number of lines to show */
-      line-clamp: 2;
-      color: white;
-  }
-
-  .channelname{
-      padding-left: 7px;
-      text-align: left;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 1; /* number of lines to show */
-      line-clamp: 1;
-      color: white;
-  }
-
-  .live{
-      color : rgb(249, 71, 71);
-      padding-left: 7px;
-      padding-right: 7px;
   }
 
   .side {

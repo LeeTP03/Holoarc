@@ -1,8 +1,8 @@
 <script>
-    
-  import ButtonRow from './ButtonRow.svelte';
+    import ButtonRow from './ButtonRow.svelte';
 
   export let data
+  let open = false
 
   $: ({live} = data)
   $: ({upcoming} = data)
@@ -43,23 +43,23 @@
 </script>
 
 <main>
-  <div class=sidepanel>
+  <div>
     <div class=side>
         <ButtonRow></ButtonRow>
     </div>
     <div style="margin-left: 140px;">
       <div>
-        <h1 style='text-align:center;'>Live!</h1>
+        <h1 class="text-6xl font-bold py-8 text-center">Live!</h1>
         <div class=outerdiv>
           {#each live as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
-                  <div style="display:flex; flex-direction:rowl">
+                  <div style="display:flex; flex-direction:row;">
                       <img class=channelicon style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
-                      <div class=worddiv>
-                          <p class=vidtitle2><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
-                          <p class=channelname>{dt.channelTitle}</p>
-                          <div style='display:flex'>
+                      <div class="flex flex-col pt-4" >
+                          <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                          <p class="pl-2 pt-2">{dt.channelTitle}</p>
+                          <div class='pt-2' style='display:flex'>
                               <p class=live>Live now</p>
                               <p>{dt.timeLive}</p>
                               <p style="color:grey; padding-left: 7px">{dt.concurrentViewers} viewers</p>
@@ -72,17 +72,17 @@
       </div>
 
       <div>
-        <h1 style="text-align: center;" >Upcoming Streams</h1>
+        <h1 class="text-6xl font-bold py-8 text-center" >Upcoming Streams</h1>
         <div class=outerdiv>
           {#each upcoming as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
                   <div style="display:flex; flex-direction:rowl">
                       <img class=channelicon style="margin:auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
-                      <div class=worddiv>
-                          <p class=vidtitle2><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
-                          <p class=channelname>{dt.channelTitle}</p>
-                          <p class="channelname">{dt.timeDiff}</p>
+                      <div class="flex flex-col pt-4">
+                          <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                          <p class="pl-2 pt-2">{dt.channelTitle}</p>
+                          <p class="pl-2 pt-2">{dt.timeDiff}</p>
                       </div>
                   </div>
                   
@@ -96,7 +96,7 @@
   
 </main>
 
-<style>
+<style lang="postcss">
 
   .side {
     background-color: rgb(52, 52, 52);
