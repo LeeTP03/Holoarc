@@ -42,7 +42,7 @@
     <div class=side>
         <ButtonRow></ButtonRow>
     </div>
-    <div style="margin-left: 140px">
+    <div style="margin-left: 7%">
       <div>
         <h1 class="text-6xl font-bold py-6 text-center">Archives</h1>
         <div class=outerdiv>
@@ -86,12 +86,6 @@
       padding-left: 50px;
       flex-wrap: wrap;
       /* outline: 5px dotted green; */
-  }
-
-  .channelicon {
-      height: 50px;
-      /* outline: 5px dotted green; */
-      border-radius: 50%;
   }
 
   .side {

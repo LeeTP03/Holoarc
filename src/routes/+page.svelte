@@ -47,7 +47,7 @@
     <div class=side>
         <ButtonRow></ButtonRow>
     </div>
-    <div style="margin-left: 140px;">
+    <div style="margin-left: 7%;">
       <div>
         <h1 class="text-6xl font-bold py-8 text-center">Live!</h1>
         <div class=outerdiv>
@@ -105,12 +105,6 @@
     height: 100vh;
   }
 
-  .sidepanel {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
   p {
       margin-top : -8px;
   }
@@ -137,37 +131,6 @@
       height: 50px;
       /* outline: 5px dotted green; */
       border-radius: 50%;
-  }
-
-  .worddiv {
-      display: flex;
-      flex-direction: column;
-      line-height: 20px;
-  }
-
-  .vidtitle2 {
-      padding-top: 5px;
-      padding-left: 7px;
-      text-align: left;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2; /* number of lines to show */
-      line-clamp: 2;
-      color: white;
-  }
-
-  .channelname{
-      padding-left: 7px;
-      text-align: left;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 1; /* number of lines to show */
-      line-clamp: 1;
-      color: white;
   }
 
   .live{
