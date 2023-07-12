@@ -3,10 +3,8 @@
 
   export let data
   let open = false
-
-  $: ({live} = data)
-  $: ({upcoming} = data)
-
+  $: ({newlive} = data)
+  $: ({newupcoming} = data)
   let now = new Date()
 
   function hourString(int){
@@ -25,19 +23,19 @@
       }
   }
 
-  for (let i = 0; i < data.live.length; i++){
-      let utcDate = data.live[i]['actualStartTime']
+  for (let i = 0; i < data.newlive.length; i++){
+      let utcDate = data.newlive[i]['actualStartTime']
       let localDate = new Date(utcDate)
-      data.live[i]['localTime'] = localDate.toISOString().substring(11,19)
+      data.newlive[i]['localTime'] = localDate.toISOString().substring(11,19)
       const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
-      data.live[i]['timeLive'] = 'for ' + hourString(hourDiff)
+      data.newlive[i]['timeLive'] = 'for ' + hourString(hourDiff)
   }
 
-  for (let i = 0; i < data.upcoming.length; i++){
-      let utcDate = data.upcoming[i]['scheduledStartTime']
+  for (let i = 0; i < data.newupcoming.length; i++){
+      let utcDate = data.newupcoming[i]['scheduledStartTime']
       let localDate = new Date(utcDate)
       const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
-      data.upcoming[i]['timeDiff'] = 'Starts in ' + hourString(hourDiff)
+      data.newupcoming[i]['timeDiff'] = 'Starts in ' + hourString(hourDiff)
   }
 
 </script>
@@ -51,14 +49,14 @@
       <div>
         <h1 class="text-6xl font-bold py-8 text-center">Live!</h1>
         <div class=outerdiv>
-          {#each live as dt}
+          {#each newlive as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
                   <div style="display:flex; flex-direction:row;">
                       <img class=channelicon style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
                       <div class="flex flex-col pt-4" >
                           <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
-                          <p class="pl-2 pt-2">{dt.channelTitle}</p>
+                          <a href='/channels/{dt.channelId}'><p class="pl-2 pt-2 text-blue-400">{dt.channelTitle}</p></a>
                           <div class='pt-2' style='display:flex'>
                               <p class=live>Live now</p>
                               <p>{dt.timeLive}</p>
@@ -68,26 +66,26 @@
                   </div>
               </div>
           {/each}
-      </div>
-      </div>
-
-      <div>
+        </div>
+    </div>
+    
+    <div>
         <h1 class="text-6xl font-bold py-8 text-center" >Upcoming Streams</h1>
         <div class=outerdiv>
-          {#each upcoming as dt}
-              <div class=div>
-                  <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
-                  <div style="display:flex; flex-direction:rowl">
-                      <img class=channelicon style="margin:auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
-                      <div class="flex flex-col pt-4">
-                          <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
-                          <p class="pl-2 pt-2">{dt.channelTitle}</p>
-                          <p class="pl-2 pt-2">{dt.timeDiff}</p>
-                      </div>
-                  </div>
-                  
-              </div>
-          {/each}
+            {#each newupcoming as dt}
+                <div class=div>
+                    <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
+                    <div style="display:flex; flex-direction:rowl">
+                        <img class=channelicon style="margin:auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
+                        <div class="flex flex-col pt-4">
+                            <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
+                            <a href='/channels/{dt.channelId}'><p class="pl-2 pt-2 text-blue-400">{dt.channelTitle}</p></a>
+                            <p class="pl-2 pt-2">{dt.timeDiff}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            {/each}
        </div>
       </div>
 

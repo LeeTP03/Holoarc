@@ -53,7 +53,7 @@
                       <img class="rounded-full h-12" style="margin: auto 0;" alt="thumbnail" src={dt.channelThumbnail}>
                       <div class="flex flex-col pt-3">
                           <p class="text-left overflow-hidden text-ellipsis line-clamp-2 pl-2"><a style='color: white;' target="_blank" href={dt.videolink}>{dt.title}</a></p>
-                          <p class="pl-2 pt-2 text-blue-400">{dt.channelTitle}</p>
+                          <a href='/channels/{dt.channelId}'><p class="pl-2 pt-2 text-blue-400">{dt.channelTitle}</p></a>
                           <p class="pl-2 pt-2 text-stone-500">{dt.timeLive}</p>
                       </div>
                   </div>
