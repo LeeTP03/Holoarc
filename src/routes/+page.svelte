@@ -3,8 +3,8 @@
 
   export let data
   let open = false
-  $: ({newlive} = data)
   $: ({newupcoming} = data)
+  $: ({newlive} = data)
   let now = new Date()
 
   function hourString(int){
@@ -37,7 +37,6 @@
       const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
       data.newupcoming[i]['timeDiff'] = 'Starts in ' + hourString(hourDiff)
   }
-
 </script>
 
 <main>
@@ -65,13 +64,13 @@
                       </div>
                   </div>
               </div>
-          {/each}
+              {/each}
+            </div>
         </div>
-    </div>
-    
-    <div>
-        <h1 class="text-6xl font-bold py-8 text-center" >Upcoming Streams</h1>
-        <div class=outerdiv>
+        
+        <div>
+            <h1 class="text-6xl font-bold py-8 text-center" >Upcoming Streams</h1>
+            <div class=outerdiv>
             {#each newupcoming as dt}
                 <div class=div>
                     <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>

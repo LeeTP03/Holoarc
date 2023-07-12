@@ -51,7 +51,7 @@
     </div>
     <div style='margin-left : 7%;'>
         <Banner cdata={data.postData.channel[0]}></Banner>
-        <h1 class="text-6xl font-bold pt-12 pb-12 text-center">{data.postData.live[0].channelTitle}</h1>
+         <h1 class="text-6xl font-bold pt-12 pb-12 text-center">{data.postData.channel[0].title}</h1>
         <div class=outerdiv>
             {#each data.postData.live as dt}
                 <div class=div>
@@ -83,8 +83,8 @@
                   </div>
               </div>
           {/each}
-        </div>
-    </div>
+        </div> 
+    </div> 
 </main>
 
 
