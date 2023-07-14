@@ -40,11 +40,9 @@
 </script>
 
 <main>
-  <div>
-    <div class=side>
-        <ButtonRow></ButtonRow>
-    </div>
-    <div style="margin-left: 7%;">
+  <div class='flex flex-row'>
+    <ButtonRow></ButtonRow>
+    <div class='pl-32'>
       <div>
         <h1 class="text-6xl font-bold py-8 text-center">Live!</h1>
         <div class=outerdiv>
@@ -95,12 +93,12 @@
 
 <style lang="postcss">
 
-  .side {
+  /* .side {
     background-color: rgb(52, 52, 52);
     padding: 4px;
     position: fixed;
     height: 100vh;
-  }
+  } */
 
   p {
       margin-top : -8px;

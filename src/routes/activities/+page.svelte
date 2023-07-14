@@ -35,10 +35,8 @@
 </script>
 
 <main>
-  <div class=sidepanel>
-    <div class=side>
+    <div class='flex flex-row'>
         <ButtonRow></ButtonRow>
-    </div>
     <div style="margin-left: 140px">
       <div>
         <h1 class="text-6xl font-bold py-6 text-center">Watch</h1>
@@ -103,51 +101,38 @@
     button:focus-visible {
         outline: 4px auto -webkit-focus-ring-color;
     }
-  
-  .side {
-    background-color: rgb(52, 52, 52);
-    padding: 4px;
-    height: 100vh;
-    position: fixed;
-  }
+        
+    p {
+        margin-top : -8px;
+    }
 
-  .sidepanel {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+    .div {
+        height: 300px;
+        width: 340px;
+        /* outline: 5px dotted green; */
 
-  p {
-      margin-top : -8px;
-  }
+    }
+    .outerdiv {
+        width : 1310px;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 60px;
+        flex-wrap: wrap;
+        padding-left: 150px;
+        /* outline: 5px dotted green; */
 
-  .div {
-      height: 300px;
-      width: 340px;
-      /* outline: 5px dotted green; */
+    }
 
-  }
-  .outerdiv {
-      width : 1310px;
-      display:flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      gap: 60px;
-      flex-wrap: wrap;
-      padding-left: 150px;
-      /* outline: 5px dotted green; */
+    .channelicon {
+        height: 50px;
+        /* outline: 5px dotted green; */
+        border-radius: 50%;
+    }
 
-  }
-
-  .channelicon {
-      height: 50px;
-      /* outline: 5px dotted green; */
-      border-radius: 50%;
-  }
-
-  .live{
-      color : rgb(249, 71, 71);
-      padding-left: 7px;
-      padding-right: 7px;
-  }
+    .live{
+        color : rgb(249, 71, 71);
+        padding-left: 7px;
+        padding-right: 7px;
+    }
 </style>

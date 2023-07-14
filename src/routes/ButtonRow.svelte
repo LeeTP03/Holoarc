@@ -10,7 +10,7 @@
 
 
 <main>
-    <div class=flexbox>
+    <div class='pt-[20px] flex-col flex fixed w-32 bg-[#333333] h-full'>
         <a href="/"><img class=logo alt='company logo' src="https://upload.wikimedia.org/wikipedia/commons/9/95/Hololive_Production.png"></a>
         {#each button as btn}
          <a style="color: white;"href={btn.link}> <div class="hover:bg-white text-white font-semibold hover:text-gray-700 py-2 px-4 ease-in-out transition-all duration-200 rounded">{btn.name}</div></a>
@@ -26,10 +26,4 @@
         padding-right: 10px;
         padding-bottom: 50px;
     }
-
-  .flexbox{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
 </style>

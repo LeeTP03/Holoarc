@@ -38,11 +38,9 @@
 </script>
 
 <main>
-  <div class=sidepanel>
-    <div class=side>
-        <ButtonRow></ButtonRow>
-    </div>
-    <div style="margin-left: 7%">
+  <div class='flex flex-row'>
+    <ButtonRow></ButtonRow>
+    <div class='pl-32'>
       <div>
         <h1 class="text-6xl font-bold py-6 text-center">Archives</h1>
         <div class=outerdiv>
@@ -86,19 +84,6 @@
       padding-left: 50px;
       flex-wrap: wrap;
       /* outline: 5px dotted green; */
-  }
-
-  .side {
-    background-color: rgb(52, 52, 52);
-    padding: 4px;
-    height: 100vh;
-    position: fixed;
-  }
-
-  .sidepanel {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
   }
 
 </style>
