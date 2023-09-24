@@ -1,51 +1,63 @@
 <script>
     import ButtonRow from './ButtonRow.svelte';
+    import { onMount } from 'svelte';
+    export let data
+    let open = false
+    $: ({newupcoming} = data)
+    $: ({newlive} = data)
+    let now = new Date()
 
-  export let data
-  let open = false
-  $: ({newupcoming} = data)
-  $: ({newlive} = data)
-  let now = new Date()
+    onMount(() => {
+        if (data.newlive.length == 0){
+        document.getElementById("nolivepara").innerHTML = "No lives currently. Check back later >.<";
+        }
+        if (data.newupcoming.length == 0){
+        document.getElementById("noupcomingpara").innerHTML = "No upcoming streams currently. Check back later >.<";
+        }
+    });
 
-  function hourString(int){
-      if (Math.floor(int) >= 10){
-          return int.toString().substring(0,2) + ' hours'
-      }
-      if (Math.floor(int) > 1){
-        return int.toString().substring(0,1) + ' hours'
-      }
-      else if (Math.floor(int) == 1){
-          return int.toString().substring(0,1) + " hour"
-      }
-      else if (Math.floor(int) == 0){
-          int = int / 100 * 60
-          return int.toString().substring(2,4) + " mins"
-      }
-  }
+    
 
-  for (let i = 0; i < data.newlive.length; i++){
-      let utcDate = data.newlive[i]['actualStartTime']
-      let localDate = new Date(utcDate)
-      data.newlive[i]['localTime'] = localDate.toISOString().substring(11,19)
-      const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
-      data.newlive[i]['timeLive'] = 'for ' + hourString(hourDiff)
-  }
+    function hourString(int){
+        if (Math.floor(int) >= 10){
+            return int.toString().substring(0,2) + ' hours'
+        }
+        if (Math.floor(int) > 1){
+            return int.toString().substring(0,1) + ' hours'
+        }
+        else if (Math.floor(int) == 1){
+            return int.toString().substring(0,1) + " hour"
+        }
+        else if (Math.floor(int) == 0){
+            int = int / 100 * 60
+            return int.toString().substring(2,4) + " mins"
+        }
+    }
 
-  for (let i = 0; i < data.newupcoming.length; i++){
-      let utcDate = data.newupcoming[i]['scheduledStartTime']
-      let localDate = new Date(utcDate)
-      const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
-      data.newupcoming[i]['timeDiff'] = 'Starts in ' + hourString(hourDiff)
-  }
+    for (let i = 0; i < data.newlive.length; i++){
+        let utcDate = data.newlive[i]['actualStartTime']
+        let localDate = new Date(utcDate)
+        data.newlive[i]['localTime'] = localDate.toISOString().substring(11,19)
+        const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
+        data.newlive[i]['timeLive'] = 'for ' + hourString(hourDiff)
+    }
+
+    for (let i = 0; i < data.newupcoming.length; i++){
+        let utcDate = data.newupcoming[i]['scheduledStartTime']
+        let localDate = new Date(utcDate)
+        const hourDiff = Math.abs(now.getTime() - localDate.getTime())/36e5;
+        data.newupcoming[i]['timeDiff'] = 'Starts in ' + hourString(hourDiff)
+    }
 </script>
 
 <main>
   <div class='flex flex-row'>
     <ButtonRow></ButtonRow>
-    <div class='pl-32'>
-      <div>
+    <div class='pl-32 w-full'>
         <h1 class="text-6xl font-bold py-8 text-center">Live!</h1>
-        <div class=outerdiv>
+        <div>
+            <p class='text-center text-2xl' id="nolivepara"></p>
+            <div class=outerdiv>
           {#each newlive as dt}
               <div class=div>
                   <a href={dt.videolink}><img src={dt.thumbnail} alt='thumbnail'></a>
@@ -68,6 +80,7 @@
         
         <div>
             <h1 class="text-6xl font-bold py-8 text-center" >Upcoming Streams</h1>
+            <p class='text-center text-2xl' id="noupcomingpara"></p>
             <div class=outerdiv>
             {#each newupcoming as dt}
                 <div class=div>
@@ -88,8 +101,9 @@
 
     </div>
   </div>
-  
 </main>
+
+
 
 <style lang="postcss">
 
@@ -118,6 +132,7 @@
       justify-content: flex-start;
       gap: 20px;
       padding-left: 50px;
+      padding-top: 40px;
       flex-wrap: wrap;
       /* outline: 5px dotted green; */
   }
